@@ -66,10 +66,10 @@ st.image(image3)
 st.markdown('#')
 st.markdown('As a buyer looking for an SUV, Abo Khalid also has numerous attractive options. Among these is the Chinese brand Changan, which ranks fourth in popularity for its reasonable prices and appealing style. This makes Changan a highly preferred option for budget-conscious buyers.')
 suv = ['CS35', 'CS95', 'CS35 Plus', 'CS75']
-
+df_more_2019 = df[(df['Price'] >= 0) & (df['Year'] >= 2019)]
 changan = df_more_2019[(df_more_2019['Make'] == 'Changan') & (df_more_2019['Type'].isin(suv))].sort_values('Price',     ascending=False)
 
-blankIndex= [1,2,3,4,5,6,7]
+blankIndex= [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
 changan.index=blankIndex
 
 st.dataframe(changan)
