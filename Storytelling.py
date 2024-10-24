@@ -1,5 +1,10 @@
 import streamlit as st
-import pandas as pd
 import numpy as np
+import pandas as pd
 
-st.title('Yahoooooo')
+
+def load_data():
+    return True
+
+st.title('Abo Khaled')
+
